@@ -1,0 +1,27 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff2fd;
+    font-family: 'Baskervville', serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Raleway', sans-serif;
+}
+.contenidoTotal{
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+}
+.seccionPrincipal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.categorias{
+    display: flex;
+}
