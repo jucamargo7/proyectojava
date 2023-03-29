@@ -12,7 +12,7 @@ body{
 }
 .contenidoTotal{
     max-width: 1100px;
-    width: 90%;
+    width: 90%; 
     margin: auto;
 }
 .seccionPrincipal{
@@ -21,7 +21,164 @@ body{
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
+    height: 180px;
+}
+
+.cuerpoProductos{
+    display: flex;
 }
 .categorias{
     display: flex;
+    flex-direction: column;
+    width: 20%;
 }
+
+.categorias .categoriaItem{
+    display: block;
+    width: 90%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background: black ;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 18px;
+    color: white;
+
+}
+.imagenCarrito:hover{
+    cursor: pointer;
+}
+.countProducts{
+    position: absolute;
+    top: 15%;
+    /* right: 0; */
+    background-color: #000;
+    color: white;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+.contenedorCarrito{
+    position: relative;
+}
+
+
+
+#infoCarrito{
+    position: absolute;
+    top: 150px; 
+    right: 0;
+    background-color: #ffffff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.20);
+    border-radius: 10px;
+}
+
+.containerCuerpo{
+    display: flex;
+    text-align: center;
+    justify-content:  center;
+    padding: 25px;
+    justify-content: space-between;
+
+ }
+
+
+ .iconoEquis{
+    display: flex;
+ }
+
+
+
+.containerCuerpo{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.20);
+}
+
+
+
+
+.iconoEquis{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+/* .cartProduct{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.20);
+} */
+
+
+
+
+/* 
+.infoCartProduct{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+} */
+
+
+
+
+.cantidadProductoCarrito{
+    font-size: 20px;
+
+}
+
+.tituloProductoCarrito{
+    font-size: 20px;
+
+}
+.precioProductoCarrito{
+    font-size: 20px;
+    font-weight: 700;
+}
+.cartTotal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+.cartTotal h3{
+    font-size: 20px;
+}
+.totalPagarCarrito{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+.hiddenCart{
+    display: none;
+} 
+
+.botonComprar{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 40px;
+
+} 
+
+
+
+
+
+
+

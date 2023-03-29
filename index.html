@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville:wght@700&family=Raleway&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville:wght@700&family=Raleway&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/estilos.css">
     <title>Joyeria Brittany Co.</title>
 </head>
+
 <body>
     <div class="contenidoTotal">
         <header class="seccionPrincipal">
@@ -19,75 +25,53 @@
             <div>
                 <h1>Bryttany Co.</h1>
             </div>
-            <div>
-                <img src="./ImagenesProyecto/CarritoCompras.png">
+            <div id="contenedorCarrito">
+                <img src="./ImagenesProyecto/CarritoCompras.png" class="imagenCarrito" id="verCarrito">
+                <div class="countProducts">
+                    <span id="contadorProductos">0</span>
+                </div>
             </div>
+            <div id="infoCarrito"></div>        
         </header>
-       <main class="cuerpoProductos">
+        <main class="cuerpoProductos">
             <section class="categorias">
-                <a href="#" id="categoryItem" category="all">Todo</a>
-                <a href="#" id="categoryItem" category="aretes">Aretes</a>
-                <a href="#" id="categoryItem" category="anillos">Anillos</a>
-                <a href="#" id="categoryItem" category="collares">Collares</a>
+                <a href="#" class="categoriaItem" category="all">Todo</a>
+                <a href="#" class="categoriaItem" category="aretes">Aretes</a>
+                <a href="#" class="categoriaItem" category="anillos">Anillos</a>
+                <a href="#" class="categoriaItem" category="collares">Collares</a>
             </section>
-            <section>
-                <div class="productItem" category="aretes">
-                    <img src="ImagenesProyecto/Arete1.jpg">
-                    <a href="#">Brittany T</a>
-                    <h3>Precio: $20.000 </h3>
-                    <button>Agregar al carrito</button>
-                </div>
-                <div class="productItem" category="aretes">
-                    <img src="ImagenesProyecto/Arete2.jpg">
-                    <a href="#">Brittany G</a>
-                    <h3>Precio: $25.000 </h3>
-                    <button>Agregar al carrito</button>
-                </div>
-                <div class="productItem" category="aretes">
-                    <img src="ImagenesProyecto/Arete3.jpg">
-                    <a href="#">Brittany W</a>
-                    <h3>Precio: $30.000</h3>
-                    <button>Agregar al carrito</button>
-                </div>
-                <div class="productItem" category="anillos">
-                    <img src="ImagenesProyecto/Anillo1.jpg">
-                    <a href="#">Brittany WS</a>
-                    <h3>Precio: $15.000 </h3>
-                    <button>Agregar al carrito</button>
-                </div>
-                <div class="productItem" category="anillos">
-                    <img src="ImagenesProyecto/Anillo2.jpg">
-                    <a href="#">Brittany CH</a>
-                    <h3>Precio: $18.000 </h3>
-                    <button>Agregar al carrito</button>
-                </div>
-                <div class="productItem" category="anillos">
-                    <img src="ImagenesProyecto/Anillo3.jpg">
-                    <a href="#">Brittany WW</a>
-                    <h3>Precio: $17.000</h3>
-                    <button>Agregar al carrito</button>
-                </div>
-                <div class="productItem" category="collares">
-                    <img src="ImagenesProyecto/Collar1.jpg">
-                    <a href="#">Brittany ASD</a>
-                    <h3>Precio: $32.000 </h3>
-                    <button>Agregar al carrito</button>
-                </div>
-                <div class="productItem" category="collares">
-                    <img src="ImagenesProyecto/Collar2.jpg">
-                    <a href="#">Brittany ZZA</a>
-                    <h3>Precio: $45.000</h3>
-                    <button>Agregar al carrito</button>
-                </div>
-                <div class="productItem" category="collares">
-                    <img src="ImagenesProyecto/Collar3.jpg">
-                    <a href="#">Brittany SDK</a>
-                    <h3>Precio: $44.000 </h3>
-                    <button>Agregar al carrito</button>
-                </div>
-            </section>
-       </main> 
+            <section class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4" id="cardDesign"></div>
     </div>
+    </section>
+    </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
+
+<!-- <div class="contenedorProducto hiddenCart">
+                        <div id="contendorDelCarrito">
+                            <div class="cartProduct">
+                                <div class="infoCartProduct">
+                                    <span class="cantidadProductoCarrito">1</span>
+                                    <p class="tituloProductoCarrito">Tiffany</p>
+                                    <span class="precioProductoCarrito">19000</span>
+                                </div>
+                                    <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="iconoEquis">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="cartTotal">
+                                <h3>Total</h3>
+                                <span class="totalPagarCarrito">$52000</span>
+                            </div>
+                    </div>
+                </div> -->
