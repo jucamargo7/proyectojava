@@ -163,6 +163,8 @@ const carritoFunciona = () =>{
 
 verCarrito.addEventListener('click', carritoFunciona)
 
+//Eliminar productos del carrito
+
 const eliminarDelCarrito = ( )=>{
     const foundId = carrito.find ((prod) => prod.id);
 
