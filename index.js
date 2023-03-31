@@ -80,7 +80,48 @@ const productos = [
     },
 ];
 
+
 let carrito =[]
+
+
+//Funcionamiento con Json
+
+// $.get('datos.json', (data) => {
+//     data.forEach((prod) => {
+//       let contenido = document.createElement('div');
+//       contenido.innerHTML = `
+//         <div class="col">
+//           <div class="card">
+//             <img src="${prod.imagen}" class="card-img-top" alt="...">
+//             <div class="card-body">
+//               <h5 class="card-title">${prod.nombre}</h5>
+//               <p class="card-text">${prod.precio}</p>
+//             </div>
+//           </div>
+//         </div>
+//       `;
+  
+//       tarjeta.append(contenido);
+  
+//       let botonComprar = document.createElement('button');
+//       botonComprar.className = 'botonComprar';
+//       botonComprar.innerHTML = 'Agregar al carrito';
+  
+//       contenido.append(botonComprar);
+  
+//       botonComprar.addEventListener('click', () => {
+//         carrito.push({
+//           id: prod.id,
+//           nombre: prod.nombre,
+//           precio: prod.precio,
+//         });
+//         console.log(carrito);
+//       });
+//     });
+//   });
+  
+
+
 
 //Creación de productos
 let tarjeta= document.querySelector("#cardDesign")
@@ -112,12 +153,25 @@ productos.forEach((prod) =>{
                 precio: prod.precio,
             });
             console.log(carrito)
+            guardarCarrito();
 
         })
     }
 )
 
+
+//Local Storage
+
+const guardarCarrito =() => {
+localStorage.setItem("carrito", JSON.stringify (carrito));
+};
+
+
+
+
 //Funcionamiento carrito
+
+
 
 let contendorModal =document.querySelector("#infoCarrito")
 const verCarrito =document.getElementById("contenedorCarrito");
@@ -279,9 +333,9 @@ const eliminarDelCarrito = ( )=>{
 
 
 
-{/* <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+/* <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="iconoEquis">
             <path stroke-linecap="round" stroke-linejoin="round"
                 d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636">
             </path>
-            </svg> */}
+            </svg> */

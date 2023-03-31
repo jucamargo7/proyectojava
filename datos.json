@@ -1,0 +1,85 @@
+[
+        {
+        "id": 1,
+        "nombre": "Brittany T",
+        "precio": 20000,
+        "imagen": "./ImagenesProyecto/Arete1.jpg"
+        },
+        {
+        "id": 2,
+        "nombre": "Brittany G",
+        "precio": 25000,
+        "imagen": "./ImagenesProyecto/Arete2.jpg"
+        },
+        {
+        "id": 3,
+        "nombre": "Brittany W",
+        "precio": 30000,
+        "imagen": "./ImagenesProyecto/Arete3.jpg"
+        },
+        {
+        "id": 4,
+        "nombre": "Brittany WS",
+        "precio": 15000,
+        "imagen": "./ImagenesProyecto/Anillo1.jpg"
+        },
+        {
+        "id": 5,
+        "nombre": "Brittany CH",
+        "precio": 18000,
+        "imagen": "./ImagenesProyecto/Anillo2.jpg"
+        },
+        {
+        "id": 6,
+        "nombre": "Brittany WW",
+        "precio": 17000,
+        "imagen": "./ImagenesProyecto/Anillo3.jpg"
+        },
+        {
+        "id": 7,
+        "nombre": "Brittany ASD",
+        "precio": 32000,
+        "imagen": "./ImagenesProyecto/Collar1.jpg"
+        },
+        {
+        "id": 8,
+        "nombre": "Brittany ZZA",
+        "precio": 45000,
+        "imagen": "./ImagenesProyecto/Collar2.jpg"
+        },
+        {
+        "id": 9,
+        "nombre": "Brittany SDK",
+        "precio": 44000,
+        "imagen": "./ImagenesProyecto/Collar3.jpg"
+        },
+        {
+        "id": 10,
+        "nombre": "Brittany SDK",
+        "precio": 44000,
+        "imagen": "./ImagenesProyecto/Collar3.jpg"
+        },
+        {
+        "id": 11,
+        "nombre": "Brittany SDK",
+        "precio": 44000,
+        "imagen": "./ImagenesProyecto/Collar3.jpg"
+        },
+        {
+        "id": 12,
+        "nombre": "Brittany SDK",
+        "precio": 44000,
+        "imagen": "./ImagenesProyecto/Collar3.jpg"
+        },
+        {
+        "id": 13,
+        "nombre": "Brittany SDK",
+        "precio": 44000,
+        "imagen": "./ImagenesProyecto/Collar3.jpg"
+        }
+]
+        
+        
+        
+        
+        
