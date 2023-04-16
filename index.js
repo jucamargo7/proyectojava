@@ -1,84 +1,84 @@
 //Arreglo de productos
-const productos = [
-    {
-        id: 1,
-        nombre: "Brittany T",
-        precio: 20000,
-        imagen: "./ImagenesProyecto/Arete1.jpg",
-    },
-    {
-        id: 2,
-        nombre: "Brittany G",
-        precio: 25000,
-        imagen: "./ImagenesProyecto/Arete2.jpg",
-    },
-    {
-        id: 3,
-        nombre: "Brittany W",
-        precio: 30000,
-        imagen: "./ImagenesProyecto/Arete3.jpg",
-    },
-    {
-        id: 4,
-        nombre: "Brittany WS",
-        precio: 15000,
-        imagen: "./ImagenesProyecto/Anillo1.jpg",
-    },
-    {
-        id: 5,
-        nombre: "Brittany CH",
-        precio: 18000,
-        imagen: "./ImagenesProyecto/Anillo2.jpg",
-    },
-    {
-        id: 6,
-        nombre: "Brittany WW",
-        precio: 17000,
-        imagen: "./ImagenesProyecto/Anillo3.jpg",
-    },
-    {
-        id: 7,
-        nombre: "Brittany ASD",
-        precio: 32000,
-        imagen: "./ImagenesProyecto/Collar1.jpg",
-    },
-    {
-        id: 8,
-        nombre: "Brittany ZZA",
-        precio: 45000,
-        imagen: "./ImagenesProyecto/Collar2.jpg",
-    },
-    {
-        id: 9,
-        nombre: "Brittany SDK",
-        precio: 44000,
-        imagen: "./ImagenesProyecto/Collar3.jpg",
-    },
-    {
-        id: 10,
-        nombre: "Brittany SDK",
-        precio: 44000,
-        imagen: "./ImagenesProyecto/Collar3.jpg",
-    },
-    {
-        id: 11,
-        nombre: "Brittany SDK",
-        precio: 44000,
-        imagen: "./ImagenesProyecto/Collar3.jpg",
-    },
-    {
-        id: 12,
-        nombre: "Brittany SDK",
-        precio: 44000,
-        imagen: "./ImagenesProyecto/Collar3.jpg",
-    },
-    {
-        id: 13,
-        nombre: "Brittany SDK",
-        precio: 44000,
-        imagen: "./ImagenesProyecto/Collar3.jpg",
-    },
-];
+// const productos = [
+//     {
+//         id: 1,
+//         nombre: "Brittany T",
+//         precio: 20000,
+//         imagen: "./ImagenesProyecto/Arete1.jpg",
+//     },
+//     {
+//         id: 2,
+//         nombre: "Brittany G",
+//         precio: 25000,
+//         imagen: "./ImagenesProyecto/Arete2.jpg",
+//     },
+//     {
+//         id: 3,
+//         nombre: "Brittany W",
+//         precio: 30000,
+//         imagen: "./ImagenesProyecto/Arete3.jpg",
+//     },
+//     {
+//         id: 4,
+//         nombre: "Brittany WS",
+//         precio: 15000,
+//         imagen: "./ImagenesProyecto/Anillo1.jpg",
+//     },
+//     {
+//         id: 5,
+//         nombre: "Brittany CH",
+//         precio: 18000,
+//         imagen: "./ImagenesProyecto/Anillo2.jpg",
+//     },
+//     {
+//         id: 6,
+//         nombre: "Brittany WW",
+//         precio: 17000,
+//         imagen: "./ImagenesProyecto/Anillo3.jpg",
+//     },
+//     {
+//         id: 7,
+//         nombre: "Brittany ASD",
+//         precio: 32000,
+//         imagen: "./ImagenesProyecto/Collar1.jpg",
+//     },
+//     {
+//         id: 8,
+//         nombre: "Brittany ZZA",
+//         precio: 45000,
+//         imagen: "./ImagenesProyecto/Collar2.jpg",
+//     },
+//     {
+//         id: 9,
+//         nombre: "Brittany SDK",
+//         precio: 44000,
+//         imagen: "./ImagenesProyecto/Collar3.jpg",
+//     },
+//     {
+//         id: 10,
+//         nombre: "Brittany SDK",
+//         precio: 44000,
+//         imagen: "./ImagenesProyecto/Collar3.jpg",
+//     },
+//     {
+//         id: 11,
+//         nombre: "Brittany SDK",
+//         precio: 44000,
+//         imagen: "./ImagenesProyecto/Collar3.jpg",
+//     },
+//     {
+//         id: 12,
+//         nombre: "Brittany SDK",
+//         precio: 44000,
+//         imagen: "./ImagenesProyecto/Collar3.jpg",
+//     },
+//     {
+//         id: 13,
+//         nombre: "Brittany SDK",
+//         precio: 44000,
+//         imagen: "./ImagenesProyecto/Collar3.jpg",
+//     },
+// ];
 
 
 let carrito =[]
@@ -86,39 +86,39 @@ let carrito =[]
 
 //Funcionamiento con Json
 
-// $.get('datos.json', (data) => {
-//     data.forEach((prod) => {
-//       let contenido = document.createElement('div');
-//       contenido.innerHTML = `
-//         <div class="col">
-//           <div class="card">
-//             <img src="${prod.imagen}" class="card-img-top" alt="...">
-//             <div class="card-body">
-//               <h5 class="card-title">${prod.nombre}</h5>
-//               <p class="card-text">${prod.precio}</p>
-//             </div>
-//           </div>
-//         </div>
-//       `;
+$.get('datos.json', (data) => {
+    data.forEach((prod) => {
+      let contenido = document.createElement('div');
+      contenido.innerHTML = `
+        <div class="col">
+          <div class="card">
+            <img src="${prod.imagen}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">${prod.nombre}</h5>
+              <p class="card-text">${prod.precio}</p>
+            </div>
+          </div>
+        </div>
+      `;
   
-//       tarjeta.append(contenido);
+      tarjeta.append(contenido);
   
-//       let botonComprar = document.createElement('button');
-//       botonComprar.className = 'botonComprar';
-//       botonComprar.innerHTML = 'Agregar al carrito';
+      let botonComprar = document.createElement('button');
+      botonComprar.className = 'botonComprar';
+      botonComprar.innerHTML = 'Agregar al carrito';
   
-//       contenido.append(botonComprar);
+      contenido.append(botonComprar);
   
-//       botonComprar.addEventListener('click', () => {
-//         carrito.push({
-//           id: prod.id,
-//           nombre: prod.nombre,
-//           precio: prod.precio,
-//         });
-//         console.log(carrito);
-//       });
-//     });
-//   });
+      botonComprar.addEventListener('click', () => {
+        carrito.push({
+          id: prod.id,
+          nombre: prod.nombre,
+          precio: prod.precio,
+        });
+        console.log(carrito);
+      });
+    });
+  });
   
 
 
@@ -126,7 +126,10 @@ let carrito =[]
 //Creación de productos
 let tarjeta= document.querySelector("#cardDesign")
 
-productos.forEach((prod) =>{
+
+
+$.get('datos.json', (data) => {
+data.forEach((prod) =>{
     let contenido = document.createElement ('div')
     contenido.innerHTML =`
         <div class="col">
@@ -158,6 +161,9 @@ productos.forEach((prod) =>{
         })
     }
 )
+});
+
+
 
 
 //Local Storage
